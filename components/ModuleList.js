@@ -3,7 +3,7 @@ import {View} from 'react-native'
 import {ListItem} from 'react-native-elements'
 
 class ModuleList extends React.Component {
-    static navigationOptions = {title: 'Modules'}
+    static navigationOptions = {title: 'Modules'};
 
     constructor(props) {
         super(props);
@@ -33,7 +33,7 @@ class ModuleList extends React.Component {
                                 courseId:
                                 this.state.courseId, moduleId: module.id
                             })}
-                        key={index}
+                        key={index + 1}
                         title={module.title}/>
                 ))}
             </View>

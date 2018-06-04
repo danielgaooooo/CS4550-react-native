@@ -3,7 +3,7 @@ import {View} from 'react-native'
 import {ListItem} from 'react-native-elements'
 
 class LessonList extends React.Component {
-    static navigationOptions = {title: 'Lessons'}
+    static navigationOptions = {title: 'Lessons'};
 
     constructor(props) {
         super(props);
@@ -31,7 +31,7 @@ class LessonList extends React.Component {
                         <ListItem
                             onPress={() => this.props.navigation
                                 .navigate("WidgetList", {lessonId: lesson.id})}
-                            key={index}
+                            key={index + 1}
                             title={lesson.title}/>))}
             </View>
         )

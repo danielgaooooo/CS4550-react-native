@@ -3,7 +3,7 @@ import {View} from 'react-native'
 import {ListItem} from 'react-native-elements'
 
 class QuestionList extends React.Component {
-    static navigationOptions = {title: 'Questions'}
+    static navigationOptions = {title: 'Questions'};
 
     constructor(props) {
         super(props);

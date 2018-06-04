@@ -31,8 +31,8 @@ class WidgetList extends React.Component {
                             onPress={() => this.props.navigation
                                 .navigate("QuestionList", {examId: widget.id})}
                             key={index}
-                            subtitle={widget.description}
-                            title={widget.title}/>))}
+                            subtitle={widget.text}
+                            title={widget.name}/>))}
             </View>
         )
     }
