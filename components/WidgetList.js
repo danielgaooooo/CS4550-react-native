@@ -1,5 +1,5 @@
 import React from 'react'
-import {View} from 'react-native'
+import {View, Button} from 'react-native'
 import {ListItem} from 'react-native-elements'
 
 class WidgetList extends React.Component {
@@ -25,6 +25,9 @@ class WidgetList extends React.Component {
     render() {
         return (
             <View style={{padding: 15}}>
+                <Button title="Create New Assignment"
+                        onPress={() => this.props.navigation
+                            .navigate('AssignmentWidget')}/>
                 {this.state.widgets.map(
                     (widget, index) => (
                         <ListItem

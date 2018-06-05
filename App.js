@@ -18,6 +18,7 @@ import ModuleList from './components/ModuleList'
 import LessonList from './components/LessonList'
 import WidgetList from './components/WidgetList'
 import QuestionList from './components/QuestionList'
+import AssignmentWidget from './components/AssignmentWidget';
 
 class Home extends React.Component {
     static navigationOptions = {
@@ -34,6 +35,9 @@ class Home extends React.Component {
                 <StatusBar barStyle="light-content"/>
                 <FixedHeader/>
 
+                <Button title="Create Assignment"
+                        onPress={() => this.props.navigation
+                            .navigate('AssignmentWidget')}/>
                 <Button title="Courses"
                         onPress={() => this.props.navigation
                             .navigate('CourseList')}/>
@@ -94,7 +98,8 @@ const App = createStackNavigator({
     TrueFalseQuestionEditor,
     MultipleChoiceQuestionEditor,
     ScreenA,
-    ScreenX
+    ScreenX,
+    AssignmentWidget
 });
 
 export default App;
